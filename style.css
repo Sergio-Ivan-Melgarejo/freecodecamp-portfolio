@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+
+:root{
+    --bg-color: #000000;
+    --primary-color: #4abd56;
+    --second-color: #074007;
+    --text-color-1: #4abd56;
+    --text-color-2: #fff;
+    --hover-color: #47e448;
+    --border-radius: 5px;
+    --max-width:40em;
+
+    --transition: all .3s ease-out;
+}
+
+.win-95{
+    --bg-color: #008081;
+    --primary-color: #c0c0c0;
+    --second-color: #808080;
+    --text-color-1: #fff;
+    --text-color-2: #000;
+    --hover-color: #040080;
+
+    --logo-color-1: #000;
+    --logo-color-2: #ff3000;
+    --logo-color-3: #66cd30;
+    --logo-color-4: #00a6ff;
+    --logo-color-5: #ffcd00;
+}
+
+.win-xp{
+    --bg-color: #008081;
+    --primary-color: #c0c0c0;
+    --second-color: #808080;
+    --text-color-1: #fff;
+    --text-color-2: #000;
+    --hover-color: #040080;
+
+    --logo-color-1: transparent;
+    --logo-color-2: #be3600;
+    --logo-color-3: #88d400;
+    --logo-color-4: #2d3dd8;
+    --logo-color-5: #fbcb00;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:776px) {}
+
+/* ___________________________________ */
+/* ______________ MAIN _______________ */
+/* ___________________________________ */
+
+.main{
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+
+    transition: var(--transition);
+}
+
+/* ___________________________________ */
+/* ____________ section 1 _____________ */
+/* ___________________________________ */
+
+.section{
+    min-height: 100vh;
+    border: 1px solid red;
+}
+
+
+/* ___________________________________ */
+/* ______________ Logo _______________ */
+/* ___________________________________ */
+
+.logo-container{
+    width: 60vw;
+    height: 40vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(7,1fr);
+}
+
+.logo-container .box{
+    border: none;
+}
+
+/* ___________________________________ */
+/* _____________ win 95 ______________ */
+/* ___________________________________ */
+
+.win-95 .logo-container{
+    transform: translate(-50%,-50%) skew(5deg);;
+}
+
+.win-95 .box{position: relative;}
+
+.win-95 .logo-container .box:nth-child(1),
+.win-95 .logo-container .box:nth-child(2),
+.win-95 .logo-container .box:nth-child(3),
+.win-95 .logo-container .box:nth-child(4),
+.win-95 .logo-container .box:nth-child(5),
+.win-95 .logo-container .box:nth-child(6),
+.win-95 .logo-container .box:nth-child(7),
+.win-95 .logo-container .box:nth-child(8),
+.win-95 .logo-container .box:nth-child(9),
+.win-95 .logo-container .box:nth-child(10),
+.win-95 .logo-container .box:nth-child(11),
+.win-95 .logo-container .box:nth-child(12),
+.win-95 .logo-container .box:nth-child(18),
+.win-95 .logo-container .box:nth-child(21),
+.win-95 .logo-container .box:nth-child(24),
+.win-95 .logo-container .box:nth-child(30),
+.win-95 .logo-container .box:nth-child(33),
+.win-95 .logo-container .box:nth-child(36),
+.win-95 .logo-container .box:nth-child(37),
+.win-95 .logo-container .box:nth-child(38),
+.win-95 .logo-container .box:nth-child(39),
+.win-95 .logo-container .box:nth-child(40),
+.win-95 .logo-container .box:nth-child(41),
+.win-95 .logo-container .box:nth-child(42),
+.win-95 .logo-container .box:nth-child(43),
+.win-95 .logo-container .box:nth-child(44),
+.win-95 .logo-container .box:nth-child(45),
+.win-95 .logo-container .box:nth-child(46),
+.win-95 .logo-container .box:nth-child(47),
+.win-95 .logo-container .box:nth-child(48),
+.win-95 .logo-container .box:nth-child(54),
+.win-95 .logo-container .box:nth-child(57),
+.win-95 .logo-container .box:nth-child(60),
+.win-95 .logo-container .box:nth-child(66),
+.win-95 .logo-container .box:nth-child(69),
+.win-95 .logo-container .box:nth-child(72),
+.win-95 .logo-container .box:nth-child(73),
+.win-95 .logo-container .box:nth-child(74),
+.win-95 .logo-container .box:nth-child(75),
+.win-95 .logo-container .box:nth-child(76),
+.win-95 .logo-container .box:nth-child(77),
+.win-95 .logo-container .box:nth-child(78),
+.win-95 .logo-container .box:nth-child(79),
+.win-95 .logo-container .box:nth-child(80),
+.win-95 .logo-container .box:nth-child(81),
+.win-95 .logo-container .box:nth-child(82),
+.win-95 .logo-container .box:nth-child(83),
+.win-95 .logo-container .box:nth-child(84){
+    background-color: var(--logo-color-1);
+}
+
+.win-95 .logo-container .box:nth-child(13),
+.win-95 .logo-container .box:nth-child(14),
+.win-95 .logo-container .box:nth-child(15),
+.win-95 .logo-container .box:nth-child(16),
+.win-95 .logo-container .box:nth-child(17),
+.win-95 .logo-container .box:nth-child(19),
+.win-95 .logo-container .box:nth-child(20),
+.win-95 .logo-container .box:nth-child(25),
+.win-95 .logo-container .box:nth-child(26),
+.win-95 .logo-container .box:nth-child(27),
+.win-95 .logo-container .box:nth-child(28),
+.win-95 .logo-container .box:nth-child(29),
+.win-95 .logo-container .box:nth-child(31),
+.win-95 .logo-container .box:nth-child(32){
+    background-color: var(--logo-color-2);
+}
+
+.win-95 .logo-container .box:nth-child(22),
+.win-95 .logo-container .box:nth-child(23),
+.win-95 .logo-container .box:nth-child(34),
+.win-95 .logo-container .box:nth-child(35){
+    background-color: var(--logo-color-3);
+}
+
+.win-95 .logo-container .box:nth-child(49),
+.win-95 .logo-container .box:nth-child(50),
+.win-95 .logo-container .box:nth-child(51),
+.win-95 .logo-container .box:nth-child(52),
+.win-95 .logo-container .box:nth-child(53),
+.win-95 .logo-container .box:nth-child(55),
+.win-95 .logo-container .box:nth-child(56),
+.win-95 .logo-container .box:nth-child(61),
+.win-95 .logo-container .box:nth-child(62),
+.win-95 .logo-container .box:nth-child(63),
+.win-95 .logo-container .box:nth-child(64),
+.win-95 .logo-container .box:nth-child(65),
+.win-95 .logo-container .box:nth-child(67),
+.win-95 .logo-container .box:nth-child(68){
+    background-color: var(--logo-color-4);
+}
+
+.win-95 .logo-container .box:nth-child(58),
+.win-95 .logo-container .box:nth-child(59),
+.win-95 .logo-container .box:nth-child(70),
+.win-95 .logo-container .box:nth-child(71){
+    background-color: var(--logo-color-5);
+}
+
+.win-95 .col-1{width: 30%;height: 30%;} 
+.win-95 .col-2{width: 40%;height: 40%;}
+.win-95 .col-3{width: 50%;height: 50%;}
+.win-95 .col-4{width: 60%;height: 60%;}
+.win-95 .col-5{width: 70%;height: 70%;}
+.win-95 .col-6{width: 80%;height: 80%;}
+
+.win-95 .col-6::after,
+.win-95 .col-7::after,
+.win-95 .col-8::after,
+.win-95 .col-9::after,
+.win-95 .col-10::after,
+.win-95 .col-11::after,
+.win-95 .col-12::after{
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+}
+
+.win-95 .col-7::after{
+    height: 40%;
+    clip-path: polygon(0 50%, 100% 15%, 100% 100%, 0 100%);
+}
+
+.win-95 .col-8::after,
+.win-95 .col-9::after,
+.win-95 .col-9::after{
+    height: 40%;
+    clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0 100%);
+}
+
+.win-95 .col-10::after{
+    height: 40%;
+    clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0 100%);
+}
+
+.win-95 .col-11::after{
+    height: 40%;
+    clip-path: polygon(0 15%, 100% 50%, 100% 100%, 0 100%);
+}
+
+.win-95 .col-12::after{
+    height: 20%;
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 100%);
+}
+
+
+/* ___________________________________ */
+/* _____________ win xp ______________ */
+/* ___________________________________ */
+
+.win-xp .logo-container{
+    width: 50vw;
+    height: 50vw;
+    grid-template-columns: repeat(5,2fr) repeat(2,1fr) repeat(5,2fr);
+}
+
+.win-xp .logo-container .box:nth-child(6),
+.win-xp .logo-container .box:nth-child(7),
+.win-xp .logo-container .box:nth-child(18),
+.win-xp .logo-container .box:nth-child(19),
+.win-xp .logo-container .box:nth-child(30),
+.win-xp .logo-container .box:nth-child(31),
+.win-xp .logo-container .box:nth-child(37),
+.win-xp .logo-container .box:nth-child(38),
+.win-xp .logo-container .box:nth-child(39),
+.win-xp .logo-container .box:nth-child(40),
+.win-xp .logo-container .box:nth-child(41),
+.win-xp .logo-container .box:nth-child(42),
+.win-xp .logo-container .box:nth-child(43),
+.win-xp .logo-container .box:nth-child(44),
+.win-xp .logo-container .box:nth-child(45),
+.win-xp .logo-container .box:nth-child(46),
+.win-xp .logo-container .box:nth-child(47),
+.win-xp .logo-container .box:nth-child(48),
+.win-xp .logo-container .box:nth-child(54),
+.win-xp .logo-container .box:nth-child(55),
+.win-xp .logo-container .box:nth-child(66),
+.win-xp .logo-container .box:nth-child(67),
+.win-xp .logo-container .box:nth-child(78),
+.win-xp .logo-container .box:nth-child(79){
+    background-color: var(--logo-color-1);
+}
+
+.win-xp .logo-container .box:nth-child(1),
+.win-xp .logo-container .box:nth-child(2),
+.win-xp .logo-container .box:nth-child(3),
+.win-xp .logo-container .box:nth-child(4),
+.win-xp .logo-container .box:nth-child(5),
+.win-xp .logo-container .box:nth-child(13),
+.win-xp .logo-container .box:nth-child(14),
+.win-xp .logo-container .box:nth-child(15),
+.win-xp .logo-container .box:nth-child(16),
+.win-xp .logo-container .box:nth-child(17),
+.win-xp .logo-container .box:nth-child(25),
+.win-xp .logo-container .box:nth-child(26),
+.win-xp .logo-container .box:nth-child(27),
+.win-xp .logo-container .box:nth-child(28),
+.win-xp .logo-container .box:nth-child(29){
+    background-color: var(--logo-color-2);
+}
+
+.win-xp .logo-container .box:nth-child(8),
+.win-xp .logo-container .box:nth-child(9),
+.win-xp .logo-container .box:nth-child(10),
+.win-xp .logo-container .box:nth-child(11),
+.win-xp .logo-container .box:nth-child(12),
+.win-xp .logo-container .box:nth-child(20),
+.win-xp .logo-container .box:nth-child(21),
+.win-xp .logo-container .box:nth-child(22),
+.win-xp .logo-container .box:nth-child(23),
+.win-xp .logo-container .box:nth-child(24),
+.win-xp .logo-container .box:nth-child(32),
+.win-xp .logo-container .box:nth-child(33),
+.win-xp .logo-container .box:nth-child(34),
+.win-xp .logo-container .box:nth-child(35),
+.win-xp .logo-container .box:nth-child(36){
+    background-color: var(--logo-color-3);
+}
+
+.win-xp .logo-container .box:nth-child(49),
+.win-xp .logo-container .box:nth-child(50),
+.win-xp .logo-container .box:nth-child(51),
+.win-xp .logo-container .box:nth-child(52),
+.win-xp .logo-container .box:nth-child(53),
+.win-xp .logo-container .box:nth-child(61),
+.win-xp .logo-container .box:nth-child(62),
+.win-xp .logo-container .box:nth-child(63),
+.win-xp .logo-container .box:nth-child(64),
+.win-xp .logo-container .box:nth-child(65),
+.win-xp .logo-container .box:nth-child(73),
+.win-xp .logo-container .box:nth-child(74),
+.win-xp .logo-container .box:nth-child(75),
+.win-xp .logo-container .box:nth-child(76),
+.win-xp .logo-container .box:nth-child(77){
+    background-color: var(--logo-color-4);
+}
+
+.win-xp .logo-container .box:nth-child(56),
+.win-xp .logo-container .box:nth-child(57),
+.win-xp .logo-container .box:nth-child(58),
+.win-xp .logo-container .box:nth-child(59),
+.win-xp .logo-container .box:nth-child(60),
+.win-xp .logo-container .box:nth-child(70),
+.win-xp .logo-container .box:nth-child(71),
+.win-xp .logo-container .box:nth-child(72),
+.win-xp .logo-container .box:nth-child(68),
+.win-xp .logo-container .box:nth-child(69),
+.win-xp .logo-container .box:nth-child(80),
+.win-xp .logo-container .box:nth-child(81),
+.win-xp .logo-container .box:nth-child(82),
+.win-xp .logo-container .box:nth-child(83),
+.win-xp .logo-container .box:nth-child(84){
+    background-color: var(--logo-color-5);
+}
+
+/* ___________________________________ */
+/* _________ logo animation __________ */
+/* ___________________________________ */
+
+.logo-container{
+    perspective: 800px;
+}
+
+.box {
+    transform: translate(-100%, -100%) scale(0);
+    opacity: 0;
+    animation: logo-box 10s ease infinite;
+    color: #fff;
+}
+
+.box-1 {animation-delay: .2s;}
+.box-2 {animation-delay: .4s;}
+.box-3 {animation-delay: .6s;}
+.box-4 {animation-delay: .8s;}
+.box-5 {animation-delay: 1s;}
+.box-6 {animation-delay: 1.2s;}
+.box-7 {animation-delay: 1.4s;}
+.box-8 {animation-delay: 1.6s;}
+.box-9 {animation-delay: 1.8s;}
+
+@keyframes logo-box {
+    30%,70%{
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(100%, 100%) scale(0);
+        opacity: 0;
+    }
+}
+
+/* ___________________________________ */
+/* _____________ sub-nav _____________ */
+/* ___________________________________ */
+
+.btn{
+    border-width: 3px;
+    border-color: var(--text-color-1) var(--text-color-2) var(--text-color-2) var(--text-color-1);
+    color: var(--text-color-2);
+    border-style: solid;
+    font-weight: bolder;
+    padding: .5em;
+    font-size: 400;
+    font-family: roboto, sans-serif;
+    display: block;
+    transition: border-color .3s ease-out, color .3s ease-out, background-color .3s ease-out;
+}
+
+.btn.active,
+.btn:hover{
+    border-color: var(--text-color-2) var(--text-color-1) var(--text-color-1) var(--text-color-2);
+}
+
+.sub-nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--second-color);
+    border-top: .5em solid var(--primary-color);
+    padding: .5em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    max-height: 4.5em;
+    z-index: 10;
+}
+
+.sub-nav__btn-window{
+    padding: .5em 1em;
+    font-size: 1.4em;
+    background-color: var(--second-color);
+    cursor: pointer;
+}
+
+.sub-nav__ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    height: 100%;
+    height: 3.3em;
+    width: 100%;
+}
+
+.sub-nav__li{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    height: 100%;
+    flex: 1 1 1px;
+}
+
+/* ___________________________________ */
+/* _______________ nav _______________ */
+/* ___________________________________ */
+
+
+.nav{
+    display: grid;
+    grid-template-columns: 5% 1fr;
+    gap: .5em;
+    position: absolute;
+    top: 0;
+    width: 70%;
+    max-width: 400px;
+    background-color: var(--second-color);
+    transform: translateY(-100%);
+    padding: .5em;
+    border-width: 3px;
+    border-color: var(--text-color-1) var(--text-color-2) var(--text-color-2) var(--text-color-1);
+    color: var(--text-color-2);
+    border-style: solid;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* .win-95 .nav{transition: visibility .3s ease-out, opacity .3s ease-out;} */
+
+.decoration{
+    background-color: var(--primary-color);
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.nav .btn{
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    border: none;
+}
+
+.nav .btn:hover{
+    background-color: var(--hover-color);
+    border: none;
+    color: var(--text-color-1);
+}
